@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mbui.sdk.absviews.FeatureViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="bottom"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="horizontal">
+
+        <com.mbui.sdk.widget.TButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_black_rounded_button"
+            android:text="上一页"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:onClick="onLast"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <com.mbui.sdk.widget.TButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_black_rounded_button"
+            android:text="下一页"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:onClick="onNext"/>
+    </LinearLayout>
+</FrameLayout>

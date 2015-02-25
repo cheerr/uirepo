@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mbui.sample">
+
+    <application
+        android:name=".UISampleApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FeatureListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".featurelistview.RefreshListViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".featurelistview.TipListViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".featurelistview.SecPullListViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".featurescrollview.RefreshScrollViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".featurescrollview.TipScrollViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".featureviewpager.PageTransActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".featureviewpager.PageControllerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".featureviewpager.PageAutoPlayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".featureimageview.SVGImageViewActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".featurewidget.SimpleWidget"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>
