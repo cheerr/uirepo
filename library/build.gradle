@@ -8,8 +8,8 @@ android {
     defaultConfig {
         minSdkVersion 9
         targetSdkVersion 21
-        versionCode Integer.valueOf(PROJ_VERSION_CODE)
-        versionName PROJ_VERSION
+        versionCode Integer.valueOf(VERSION_CODE)
+        versionName VERSION_NAME
     }
     buildTypes {
         release {
@@ -18,8 +18,8 @@ android {
         }
     }
 }
-//需要发布到远程时执行下面的话，命令gradle bintray
-//apply from: 'bintray.gradle'
+
+apply from: '/Users/chenwei/.gradle/gradle-mvn-push.gradle'
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
